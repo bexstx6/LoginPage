@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import {RegistrationComponent} from './registration/registration.component';
+import {RouterLink, RouterModule, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RegistrationComponent
+  imports: [RouterOutlet,
+    RegistrationComponent, RouterLink
   ],
-  template: '<app-registration></app-registration>'
+  template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
   title = 'LoginPage';

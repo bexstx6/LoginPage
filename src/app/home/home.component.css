@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #eba874, #acb6e5);
+  text-align: center;
+  color: white;
+}
+
+.nav-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button style */
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  cursor: pointer;
+}
