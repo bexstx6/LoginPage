@@ -1,0 +1,67 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #eba874, #acb6e5);
+}
+
+/* Стиль формы */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для заголовков полей */
+form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Стиль для полей ввода */
+form input[type="text"],
+form input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+
+/* Стиль кнопки отправки */
+form input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #eba874, #acb6e5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: disc; /* Включает маркеры */
+  margin-left: 20px; /* Добавляет отступ слева */
+  padding-left: 20px; /* Добавляет внутренний отступ слева для маркеров */
+}
