@@ -1,0 +1,18 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()">
+    <label for="username">Username</label><br>
+    <input type="text" id="username" name="name" [(ngModel)]="user.username"><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" [(ngModel)]="user.password"><br>
+    <label for="password-confirmation">Confirmation</label><br>
+    <input type="password" id="password-confirmation" name="passwordConfirmation" [(ngModel)]="passwordConfirmation"><br>
+    <input type="submit" value="Confirm">
+  </form>
+</div>
+
+<ul>
+  <li *ngFor="let user of dataBase.getUsers()">{{user}}</li>
+</ul>
+
+
+

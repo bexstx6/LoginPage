@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import {RegistrationComponent} from './registration/registration.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [
+    RegistrationComponent
+  ],
+  template: '<app-registration></app-registration>'
 })
 export class AppComponent {
   title = 'LoginPage';
